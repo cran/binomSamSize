@@ -34,8 +34,14 @@ LazyLoad: \tab yes\cr
 The packages relies heavily on the functions in the package
 \code{binom} by Sundar Dorai-Raj. 
 
+Other R packages
+containing similar functionality for calculating sample sizes for pooled
+sampling is the \code{binGroup} package.  Also the \code{epiR} has
+further functionality for computing sample sizes for tests with
+sensitivity and specificity different from 1.
+
 Functionality for pooled prevalence calculations with a nice web
-interface can be found at
+interface can also be found at
 http://www.ausvet.com.au/pprev/content.php?page=home
 
 Note that the package is still in a development stage. As a consequence,

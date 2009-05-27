@@ -3,8 +3,8 @@ Type: Package
 Title: Confidence intervals and sample size determination for a
         binomial proportion under simple random sampling and pooled
         sampling
-Version: 0.1-1
-Date: 2009-05-17
+Version: 0.1-2
+Date: 2009-05-27
 Author: Michael Hoehle with contributions by Wei Liu
 Maintainer: Michael Hoehle <hoehle@stat.uni-muenchen.de>
 Depends: binom
@@ -20,6 +20,6 @@ Description: A suite of functions to compute confidence intervals and
 License: GPL-3
 LazyLoad: yes
 Encoding: latin1
-Packaged: 2009-05-17 18:23:54 UTC; hoehle
+Packaged: 2009-05-28 21:17:25 UTC; hoehle
 Repository: CRAN
-Date/Publication: 2009-05-18 10:17:02
+Date/Publication: 2009-05-29 07:01:18

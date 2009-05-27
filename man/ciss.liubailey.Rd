@@ -33,20 +33,22 @@ where \eqn{\hat{p}_n = x/n}. The interval is then expanded to a full
   = \min(1,\max( 2d, \hat{p}_u))} As a consequence, the computed
   interval will always have length \eqn{2d}.
 
-  If fixed length is a desired property of your CI then this is a way to
-  go. However, such intervals can although have a poor coverage
-  coefficients when \eqn{n} is very small and \eqn{d} is too small. In such
-  situations it might be better to use a different scheme allowing the
-  level to fall slightly below \eqn{1-\alpha}, e.g. as in Wilson intervals.
-  
   Given \code{d}, fixed \code{lambda} and a sample size \code{n}, the
-  proportion p in [0,1] where the coverage probability is minimum is
-  computed. The sample size is then gradually increased until this
-  minimum coverage probability becomes larger than \eqn{1-\alpha}. For a
-  general overview of coverage probabilities of confidence intervals for
-  a binomial proportion see Agresti and Coull (1998). Once actual
-  binomial data are obtained the function \code{\link{binom.liubailey}}
-  can be used to compute the actual confidence interval.
+  proportion \eqn{p} in [0,1] where the coverage probability is minimum
+  is computed.  The sample size is then gradually increased until this
+  minimum coverage probability becomes larger than \eqn{1-\alpha}.  We
+  then change the value of \eqn{\lambda}, and search the minimum sample
+  size that guarantee the \eqn{1-\alpha} confidence level for this
+  lambda value. The smallest minimum sample size over a set of lambda
+  values in \code{lambda.grid} is then used as the required sample size;
+  this sample size and the corresponding lambda value are used to
+  calculate the confidence interval given above.
+
+  For a general overview of coverage probabilities of confidence
+  intervals for a binomial proportion see Agresti and Coull (1998). Once
+  actual binomial data are obtained the function
+  \code{\link{binom.liubailey}} can be used to compute the actual
+  confidence interval.
   
   The R function code calls the original Fortran code developed for the
   Liu and Bailey (2002) article. NAG calls were replaced by R API calls

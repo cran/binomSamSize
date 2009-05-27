@@ -40,9 +40,17 @@ binom.liubailey(x, n, d, lambda=0, conf.level=0.95)
   \deqn{\hat{p}_l^* =
     \max(0,\min( 1-2d, \hat{p}_l))} \deqn{\hat{p}_u^* = \min(1,\max( 2d, \hat{p}_u))}
   %
-  As a
-  consequence, the computed interval will always have length \eqn{2d}. 
- 
+  As a consequence, the computed interval will always have length \eqn{2d}. 
+
+  If fixed length is a desired property of your CI then this is a way to    
+  go. However, the Liu and Bailey (2002) confidence intervals can have a low
+  coverage coefficients when \eqn{n} is very small compared to
+  \eqn{d}. When using the sample size computation procedure in
+  \code{ciss.liubailey} one however ensures that \eqn{n} is large enough
+  for the selected \eqn{d} to guarantee the required coverage
+  coefficient. Thus, one should use \code{binom.liubailey} in connection 
+  with \code{ciss.liubailey}.
+
 }
 \value{
   A data.frame containing the observed proportions and the lower and
