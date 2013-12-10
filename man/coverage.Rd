@@ -12,7 +12,7 @@
 }
 \usage{
 coverage(ci.fun, n, alpha=0.05, p.grid=NULL,interval=c(0,1),
-         pmfX=function(k,n,p) dbinom(k,size=n,p=p), \dots)
+         pmfX=function(k,n,p) dbinom(k,size=n,prob=p), \dots)
 \method{plot}{coverage}(x, y=NULL, \dots)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -49,7 +49,6 @@ coverage(ci.fun, n, alpha=0.05, p.grid=NULL,interval=c(0,1),
 
 }
 \references{
-
 Agresti, A. and Coull, B.A. (1998), Approximate is Better than
 "Exact" for Interval Estimation of Binomial Proportions, The
 American Statistician, 52(2):119-126.

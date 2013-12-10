@@ -24,10 +24,10 @@ ciss.midp <- function(p0, d, alpha,nMax=1e6) {
     #Nearest x so x/n \approx p0
     x <- round(p0 * n)
     #LHS
-    lhs2 <-  1/2*dbinom(x, size=n, p=pi.L) +
-      1/2*dbinom(x, size=n, p=pi.U) +
-        pbinom(x, size=n, p=pi.L, lower.tail=FALSE) +
-          pbinom(x-1, size=n, p=pi.U)
+    lhs2 <-  1/2*dbinom(x, size=n, prob=pi.L) +
+      1/2*dbinom(x, size=n, prob=pi.U) +
+        pbinom(x, size=n, prob=pi.L, lower.tail=FALSE) +
+          pbinom(x-1, size=n, prob=pi.U)
     #Are we below alpha already?
     if (!is.na(lhs2)) { done <- (lhs2 < alpha) }
   }

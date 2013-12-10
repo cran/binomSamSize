@@ -20,8 +20,10 @@ ciss.binom(p0, d, alpha=0.05, ci.fun=binom.confint,
   \item{p0}{ hypothesized value of the parameter \eqn{p} in the binomial
     distributionproportion. This is an upper bound if \code{p0}
     is below 1/2, and a lower bound if \code{p0} is above 1/2. }
-  \item{d}{ half width of the confidence interval }
-  \item{alpha}{ an \eqn{(1-\alpha/2)\cdot 100\%} confidence
+  \item{d}{ half width of the confidence interval. Note: The CI is not
+    necessarily symmetric about the estimate so we just look at its
+    width as determine by \eqn{d = 1/2*(CI_upper - CI_lower)}. }
+  \item{alpha}{ a two-sided \eqn{(1-\alpha)\cdot 100\%} confidence
     interval is computed } 
   \item{ci.fun}{ Any \code{binom.confint} like confidence interval
     computing function. The default is the

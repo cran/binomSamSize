@@ -24,7 +24,8 @@ c      -pedantic has a problem with real*8, using double precision instead
 c      implicit real*8 (a-h,p-z)
 c      IMPLICIT REAL(KIND=DPKIND)(a-h,p-z)
       implicit double precision (a-h,p-z)
-      dimension  rlow(0:17000), rupp(0:17000) 
+c hoehle: changed dimension to begin at -1 instead of 0
+      dimension  rlow(-1:17000), rupp(-1:17000) 
       rc = 1.0
 
 10    if( rc .lt. 0.0 )goto 100

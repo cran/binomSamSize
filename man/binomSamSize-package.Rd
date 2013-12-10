@@ -25,9 +25,9 @@
 \tabular{ll}{
 Package: \tab binomSamSize\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2009-05-17\cr
-License: \tab GPL-2 \cr
+Version: \tab 0.1-3\cr
+Date: \tab 2013-12-10\cr
+License: \tab GPL-3 \cr
 LazyLoad: \tab yes\cr
 }
 
@@ -53,7 +53,7 @@ report them to the package maintainer.
 \author{
   Michael \enc{Höhle}{Hoehle} with contributions by Wei Liu
   
-  Maintainer: Michael \enc{Höhle}{Hoehle} <hoehle@stat.uni-muenchen.de>
+  Maintainer: Michael \enc{Höhle}{Hoehle} <hoehle@math.su.se>
 }
 \references{
 
@@ -63,7 +63,7 @@ intervals, Computational Statistics and Data Analysis, 46:309--316.
 }
 \keyword{ package }
 \seealso{
-  \code{\link[<binom>:<binom>-package]{<binom>}} 
+  Package \code{\link[binom]{binom.confint}{binom::binom.confint}}
 }
 %\examples{
 %}

@@ -22,7 +22,7 @@
 #
 ######################################################################
 coverage <- function(ci.fun, n, alpha=0.05, p.grid=NULL,interval=c(0,1),
-                     pmfX=function(k,n,p) dbinom(k,size=n,p=p), ...) {
+                     pmfX=function(k,n,p) dbinom(k,size=n,prob=p), ...) {
   if (! (all(interval >= 0) & all(interval <= 1)) & (interval[2]<interval[1])) {
     stop("Error: Interval has to be a subset of [0,1] with borders upper>lower.")
   }
