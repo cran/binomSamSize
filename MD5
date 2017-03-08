@@ -1,9 +1,9 @@
-1544f591e8a8f2355b8882dc928f0bfe *DESCRIPTION
-0f6f8539c244fc49d0d26a4faaac6b78 *NAMESPACE
+3ad7c5ab69abd65a957d79a1d0318602 *DESCRIPTION
+ae42751702f76b7e6c2d63bac6d50508 *NAMESPACE
 08b620748ce3b7d983e467f112865895 *R/binom.liubailey.R
 8b8e466ea9880067ea5eb17a6045e662 *R/binom.midp.R
 da02db9b9cc0399fa9907e773696d7c8 *R/ciss.binom.R
-356e1e6c2fe62283fb11d1e3bf925d17 *R/ciss.liubailey.R
+9670a0ec6823ce58362244385d90344d *R/ciss.liubailey.R
 e1c3e444ee70df782e8e3679921fa5c0 *R/ciss.midp.R
 32374afc9271d829c1a68619feab989b *R/ciss.piegorsch.R
 8de5aa10ca6e248871df5b9b9cc6080b *R/ciss.pool.waldtype.R
@@ -23,7 +23,8 @@ fb844dc726c95ab2dcfbf65413e7ad95 *man/ciss.piegorsch.Rd
 e13fbfc93c605e126f7590437a205ab8 *man/coverage.Rd
 b939afd46a05a6381a7339393a9e4740 *man/poolbinom.lrt.Rd
 226d57a21a03fb1d78987fe91dfb9ff5 *man/poolbinom.waldtype.Rd
+af49b7d66be5363a143e3ba142d4888d *src/register.c
 e34aaa2baaae71a4cd2498f0bed2e70e *src/wei.f
-d2b09e403eb557ecb27323c4c75c90dd *src/wei_helper.c
+8bb6ef8ee45e3f064904aa7c4c12fcf5 *src/wei_helper.c
 081ee1739e336aec6601c9bd7978e3fc *tests/testthat.R
 cb02a642aa512e36c88f79bb5ddb78f1 *tests/testthat/test-wei.R

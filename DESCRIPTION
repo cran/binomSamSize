@@ -3,8 +3,8 @@ Type: Package
 Title: Confidence Intervals and Sample Size Determination for a
         Binomial Proportion under Simple Random Sampling and Pooled
         Sampling
-Version: 0.1-4
-Date: 2016-12-04
+Version: 0.1-5
+Date: 2017-03-07
 Authors@R: c(person("Michael", "Höhle",
                   email = "hoehle@math.su.se",
                   role = c("aut", "cre")),
@@ -25,7 +25,8 @@ Description:
 License: GPL-3
 LazyLoad: yes
 Encoding: latin1
+RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2016-12-04 23:17:53 UTC; hoehle
+Packaged: 2017-03-07 21:59:26 UTC; hoehle
 Repository: CRAN
-Date/Publication: 2016-12-05 08:27:24
+Date/Publication: 2017-03-08 08:22:16
